@@ -9,7 +9,11 @@ const TitleNav = (props) => (
       <Icon name="back" />
       <h2>Applicants</h2>
     </div>
-    <StatsBar applicants={props.applicants} />
+    <StatsBar
+      applicants={props.applicants}
+      isMobile={props.isMobile}
+      isTablet={props.isTablet}
+    />
   </div>
 );
 

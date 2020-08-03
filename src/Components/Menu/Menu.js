@@ -4,10 +4,10 @@ import LeftMenu from "./LeftMenu";
 
 import "./Menu.css";
 
-const Menu = () => (
+const Menu = (props) => (
   <header className="Header Flex">
     <LeftMenu />
-    <RightMenu />
+    <RightMenu isMobile={props.isMobile} isTablet={props.isTablet} />
   </header>
 );
 

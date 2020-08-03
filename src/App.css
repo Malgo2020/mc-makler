@@ -7,3 +7,11 @@
 .Flex {
   display: flex;
 }
+
+.Relative {
+  position: relative;
+}
+
+.Wrap {
+  flex-wrap: wrap;
+}
