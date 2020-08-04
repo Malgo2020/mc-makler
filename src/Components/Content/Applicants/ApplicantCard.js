@@ -18,9 +18,20 @@ const ApplicantCard = (props) => {
     return resultDate;
   };
 
+  // assign random color to logo
+  const cardColors = [
+    "CardBlue",
+    "CardLightBlue",
+    "CardOlive",
+    "CardRed",
+    "CardOrange",
+  ];
+  const position = Math.floor(Math.random() * cardColors.length);
+  const logoStyling = `ApplicantCardLogo Flex ${cardColors[position]}`;
+
   return (
     <div className="ApplicantCard Flex">
-      <div className="ApplicantCardLogo Flex CardBlue">
+      <div className={logoStyling}>
         <div className="ApplicantCardLogoText">{initials}</div>
       </div>
       <p>

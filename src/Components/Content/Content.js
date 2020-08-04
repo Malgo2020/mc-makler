@@ -1,94 +1,82 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useHistory, useLocation } from "react-router-dom";
+
 import Applicants from "./Applicants/Applicants";
 import TitleNav from "./TitleNav/TitleNav";
 import SearchBar from "./SearchBar/SearchBar";
 import Filters from "./Filters/Filters";
-import * as status from "./applicantStatus";
+
+import { loadApplicants, searchApplicants } from "./applicantsApi";
 
 import "./Content.css";
 
 const Content = (props) => {
-  const [applicants, setApplicants] = useState([
-    {
-      id: 1,
-      firstName: "Adam",
-      lastName: "Addan",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Appointment_Set,
-      appointmentDate: "2020-08-15T10:30",
-    },
-    {
-      id: 2,
-      firstName: "A",
-      lastName: "2",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Property_Viewed,
-      viewDate: "2020-07-17T12:01",
-      bid: "250.000 €",
-    },
-    {
-      id: 3,
-      firstName: "A",
-      lastName: "3",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Interested,
-      new: false,
-    },
-    {
-      id: 4,
-      firstName: "A",
-      lastName: "4",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Interested,
-      new: true,
-    },
-    {
-      id: 5,
-      firstName: "A",
-      lastName: "5",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Offer_Accepted,
-      new: false,
-    },
-    {
-      id: 6,
-      firstName: "Am",
-      lastName: "Mam",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Appointment_Set,
-      new: true,
-      appointmentDate: "2020-09-17T12:30",
-    },
-    {
-      id: 7,
-      firstName: "Boba",
-      lastName: "Fett",
-      emailAddress: "a@a.com",
-      phone: "000",
-      status: status.Appointment_Set,
-      new: false,
-      appointmentDate: "2020-08-19T09:30",
-    },
-  ]);
+  const [applicants, setApplicants] = useState([]);
+  const [filteredApplicants, setFilteredApplicants] = useState([]);
+  const [searchString, setSearchString] = useState("");
+  const [isFiltering, setIsFiltering] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
+
+  const history = useHistory();
+  const location = useLocation();
+
+  useEffect(() => {
+    // timeout added to show loading icon
+    setTimeout(() => {
+      try {
+        setApplicants(loadApplicants());
+      } catch (error) {
+        setIsError(true);
+        console.log(error);
+      } finally {
+        setIsLoading(false);
+      }
+    }, 1000);
+  }, []);
+
+  useEffect(() => {
+    const urlSearch = new URLSearchParams(location.search).get("search");
+    if (urlSearch) {
+      setIsFiltering(true);
+      setSearchString(urlSearch);
+      setFilteredApplicants(searchApplicants(urlSearch));
+    }
+  }, []);
+
+  const handleSearch = (event) => {
+    const searchString = event.target.value;
+    if (searchString === "") {
+      //reset list
+      setIsFiltering(false);
+      setSearchString("");
+      history.push("/");
+    } else {
+      setIsFiltering(true);
+      setSearchString(searchString);
+      setFilteredApplicants(searchApplicants(searchString));
+      history.push(`/?search=${searchString}`);
+    }
+  };
 
   return (
     <main className="Main">
       <TitleNav
         applicants={applicants}
+        isLoading={isLoading}
+        isError={isError}
         isMobile={props.isMobile}
         isTablet={props.isTablet}
       />
       <div className="Flex Relative Wrap">
-        <SearchBar />
+        <SearchBar handleSearch={handleSearch} value={searchString} />
         <Filters />
       </div>
-      <Applicants applicants={applicants} />
+      <Applicants
+        applicants={isFiltering ? filteredApplicants : applicants}
+        isLoading={isLoading}
+        isError={isError}
+      />
     </main>
   );
 };
