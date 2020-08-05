@@ -11,7 +11,7 @@
   line-height: 19px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 450px) {
   .SearchBar {
     margin-left: 24px;
     width: 305px;

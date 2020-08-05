@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 450px) {
   .Header {
     margin: 0px 50px;
   }
@@ -25,4 +25,11 @@
 
 .Support {
   margin-right: 10px;
+}
+
+.LanguageButton {
+  appearance: none;
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
 }

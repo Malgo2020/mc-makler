@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 
 const ApplicantCard = (props) => {
   const { applicant } = props;
@@ -9,7 +10,7 @@ const ApplicantCard = (props) => {
   const returnDate = (dateString) => {
     const date = new Date(dateString);
     const day = date.getDate();
-    const month = date.toLocaleString("default", { month: "long" });
+    const month = date.toLocaleString(props.language, { month: "long" });
     const hour = date.getHours();
     const minute = date.getMinutes();
     const resultDate = `${day} ${month} ${hour}:${
@@ -43,17 +44,19 @@ const ApplicantCard = (props) => {
       <p>{applicant.emailAddress}</p>
       {applicant.appointmentDate && (
         <div className="ApplicantCardAppointment ApplicantCardLabel">
-          Appointment {returnDate(applicant.appointmentDate)}
+          <FormattedMessage id="Appointment" defaultMessage="Appointment" />{" "}
+          {returnDate(applicant.appointmentDate)}
         </div>
       )}
       {applicant.viewDate && (
         <div className="ApplicantCardAppointment ApplicantCardLabel">
-          Viewed {returnDate(applicant.viewDate)}
+          <FormattedMessage id="Viewed" defaultMessage="Viewed" />{" "}
+          {returnDate(applicant.viewDate)}
         </div>
       )}
       {applicant.bid && (
         <div className="ApplicantCardBid ApplicantCardLabel">
-          Bid {applicant.bid}
+          <FormattedMessage id="Bid" defaultMessage="Bid" /> {applicant.bid}
         </div>
       )}
     </div>

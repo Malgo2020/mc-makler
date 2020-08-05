@@ -76,6 +76,7 @@ const Content = (props) => {
         applicants={isFiltering ? filteredApplicants : applicants}
         isLoading={isLoading}
         isError={isError}
+        language={props.language}
       />
     </main>
   );
