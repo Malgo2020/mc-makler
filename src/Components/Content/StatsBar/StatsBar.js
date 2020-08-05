@@ -74,4 +74,11 @@ const StatsBar = (props) => {
     </div>
   );
 };
+
+StatsBar.defaultProps = {
+  applicants: [],
+  isMobile: false,
+  isTablet: false,
+};
+
 export default StatsBar;

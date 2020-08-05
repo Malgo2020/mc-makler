@@ -16,4 +16,11 @@ const Menu = (props) => (
   </header>
 );
 
+Menu.defaultProps = {
+  isMobile: false,
+  isTablet: false,
+  toggleLanguage: () => {},
+  language: "en",
+};
+
 export default Menu;

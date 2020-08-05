@@ -23,4 +23,8 @@ const Icon = (props) => (
   </div>
 );
 
+Icon.defaultProps = {
+  name: "",
+};
+
 export default Icon;

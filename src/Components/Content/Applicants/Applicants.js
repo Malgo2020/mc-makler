@@ -129,4 +129,11 @@ const Applicants = (props) => {
   );
 };
 
+Applicants.defaultProps = {
+  applicants: [],
+  isError: false,
+  isLoading: false,
+  language: "en",
+};
+
 export default Applicants;

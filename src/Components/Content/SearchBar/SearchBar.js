@@ -6,8 +6,8 @@ import { defineMessage, useIntl } from "react-intl";
 import "./SearchBar.css";
 
 const searchPlaceholder = defineMessage({
-  id: "Search for applicants",
-  defaultMessage: "Search for applicants",
+  id: "Search for applicant",
+  defaultMessage: "Search for applicant",
 });
 
 const SearchBar = (props) => {
@@ -27,6 +27,11 @@ const SearchBar = (props) => {
       </span>
     </>
   );
+};
+
+SearchBar.defaultProps = {
+  handleSearch: () => {},
+  value: "",
 };
 
 export default SearchBar;

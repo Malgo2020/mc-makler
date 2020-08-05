@@ -42,4 +42,11 @@ const RightMenu = (props) => (
   </div>
 );
 
+RightMenu.defaultProps = {
+  isMobile: false,
+  isTablet: false,
+  toggleLanguage: () => {},
+  language: "en",
+};
+
 export default RightMenu;
