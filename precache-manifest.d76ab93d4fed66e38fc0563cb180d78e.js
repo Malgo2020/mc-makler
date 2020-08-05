@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "883fef60d3f83558a7e2fe5c7a1737bc",
+    "revision": "5d721dcb64142da4d21428e3f042eeef",
     "url": "/mc-makler/index.html"
   },
   {
-    "revision": "ebab82750474bb5a12d7",
-    "url": "/mc-makler/static/css/main.c92a8c5b.chunk.css"
+    "revision": "89e308be33f69a337550",
+    "url": "/mc-makler/static/css/main.8bf8134b.chunk.css"
   },
   {
     "revision": "3d651cb78e1287d5b530",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mc-makler/static/js/2.ce1b7c73.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ebab82750474bb5a12d7",
-    "url": "/mc-makler/static/js/main.35832635.chunk.js"
+    "revision": "89e308be33f69a337550",
+    "url": "/mc-makler/static/js/main.a96cacd0.chunk.js"
   },
   {
     "revision": "376e9dd5325e6431836e",

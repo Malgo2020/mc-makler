@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mc-makler/precache-manifest.4853c4465b0b9675f03a77fbb6a98d1f.js"
+  "/mc-makler/precache-manifest.d76ab93d4fed66e38fc0563cb180d78e.js"
 );
 
 self.addEventListener('message', (event) => {

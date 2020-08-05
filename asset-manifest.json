@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mc-makler/static/css/main.c92a8c5b.chunk.css",
-    "main.js": "/mc-makler/static/js/main.35832635.chunk.js",
-    "main.js.map": "/mc-makler/static/js/main.35832635.chunk.js.map",
+    "main.css": "/mc-makler/static/css/main.8bf8134b.chunk.css",
+    "main.js": "/mc-makler/static/js/main.a96cacd0.chunk.js",
+    "main.js.map": "/mc-makler/static/js/main.a96cacd0.chunk.js.map",
     "runtime-main.js": "/mc-makler/static/js/runtime-main.9caf8e88.js",
     "runtime-main.js.map": "/mc-makler/static/js/runtime-main.9caf8e88.js.map",
     "static/js/2.ce1b7c73.chunk.js": "/mc-makler/static/js/2.ce1b7c73.chunk.js",
     "static/js/2.ce1b7c73.chunk.js.map": "/mc-makler/static/js/2.ce1b7c73.chunk.js.map",
     "index.html": "/mc-makler/index.html",
-    "precache-manifest.4853c4465b0b9675f03a77fbb6a98d1f.js": "/mc-makler/precache-manifest.4853c4465b0b9675f03a77fbb6a98d1f.js",
+    "precache-manifest.d76ab93d4fed66e38fc0563cb180d78e.js": "/mc-makler/precache-manifest.d76ab93d4fed66e38fc0563cb180d78e.js",
     "service-worker.js": "/mc-makler/service-worker.js",
-    "static/css/main.c92a8c5b.chunk.css.map": "/mc-makler/static/css/main.c92a8c5b.chunk.css.map",
+    "static/css/main.8bf8134b.chunk.css.map": "/mc-makler/static/css/main.8bf8134b.chunk.css.map",
     "static/js/2.ce1b7c73.chunk.js.LICENSE.txt": "/mc-makler/static/js/2.ce1b7c73.chunk.js.LICENSE.txt",
     "static/media/active.8317e197.svg": "/mc-makler/static/media/active.8317e197.svg",
     "static/media/arrow_drop_down.61697c12.svg": "/mc-makler/static/media/arrow_drop_down.61697c12.svg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.9caf8e88.js",
     "static/js/2.ce1b7c73.chunk.js",
-    "static/css/main.c92a8c5b.chunk.css",
-    "static/js/main.35832635.chunk.js"
+    "static/css/main.8bf8134b.chunk.css",
+    "static/js/main.a96cacd0.chunk.js"
   ]
 }
