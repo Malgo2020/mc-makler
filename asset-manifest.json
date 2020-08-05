@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mc-makler/static/css/main.8bf8134b.chunk.css",
-    "main.js": "/mc-makler/static/js/main.a96cacd0.chunk.js",
-    "main.js.map": "/mc-makler/static/js/main.a96cacd0.chunk.js.map",
+    "main.js": "/mc-makler/static/js/main.c33820eb.chunk.js",
+    "main.js.map": "/mc-makler/static/js/main.c33820eb.chunk.js.map",
     "runtime-main.js": "/mc-makler/static/js/runtime-main.9caf8e88.js",
     "runtime-main.js.map": "/mc-makler/static/js/runtime-main.9caf8e88.js.map",
     "static/js/2.ce1b7c73.chunk.js": "/mc-makler/static/js/2.ce1b7c73.chunk.js",
     "static/js/2.ce1b7c73.chunk.js.map": "/mc-makler/static/js/2.ce1b7c73.chunk.js.map",
     "index.html": "/mc-makler/index.html",
-    "precache-manifest.d76ab93d4fed66e38fc0563cb180d78e.js": "/mc-makler/precache-manifest.d76ab93d4fed66e38fc0563cb180d78e.js",
+    "precache-manifest.587a37b793e37ac231bbabf85eac4111.js": "/mc-makler/precache-manifest.587a37b793e37ac231bbabf85eac4111.js",
     "service-worker.js": "/mc-makler/service-worker.js",
     "static/css/main.8bf8134b.chunk.css.map": "/mc-makler/static/css/main.8bf8134b.chunk.css.map",
     "static/js/2.ce1b7c73.chunk.js.LICENSE.txt": "/mc-makler/static/js/2.ce1b7c73.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.9caf8e88.js",
     "static/js/2.ce1b7c73.chunk.js",
     "static/css/main.8bf8134b.chunk.css",
-    "static/js/main.a96cacd0.chunk.js"
+    "static/js/main.c33820eb.chunk.js"
   ]
 }
