@@ -1,0 +1,35 @@
+.Header {
+  height: 80px;
+  margin: 0px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 450px) {
+  .Header {
+    margin: 0px 50px;
+  }
+}
+
+.Logo {
+  margin-left: 20px;
+}
+
+.RightMenu {
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.Support {
+  margin-right: 10px;
+}
+
+.LanguageButton {
+  appearance: none;
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+}

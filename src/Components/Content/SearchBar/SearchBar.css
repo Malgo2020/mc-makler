@@ -1,0 +1,25 @@
+.SearchBar {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin: 16px;
+  padding-left: 42px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@media only screen and (min-width: 450px) {
+  .SearchBar {
+    margin-left: 24px;
+    width: 305px;
+  }
+}
+
+.SearchBarIcon {
+  position: absolute;
+  top: 28px;
+  left: 30px;
+}
