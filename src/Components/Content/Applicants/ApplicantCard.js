@@ -63,4 +63,9 @@ const ApplicantCard = (props) => {
   );
 };
 
+ApplicantCard.defaultProps = {
+  applicant: {},
+  language: "en",
+};
+
 export default ApplicantCard;

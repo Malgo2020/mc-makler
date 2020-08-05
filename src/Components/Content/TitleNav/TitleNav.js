@@ -23,4 +23,12 @@ const TitleNav = (props) => (
   </div>
 );
 
+TitleNav.defaultProps = {
+  applicants: [],
+  isMobile: false,
+  isTablet: false,
+  isLoading: false,
+  isError: false,
+};
+
 export default TitleNav;

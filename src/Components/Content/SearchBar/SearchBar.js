@@ -29,4 +29,9 @@ const SearchBar = (props) => {
   );
 };
 
+SearchBar.defaultProps = {
+  handleSearch: () => {},
+  value: "",
+};
+
 export default SearchBar;

@@ -42,7 +42,7 @@ const Content = (props) => {
       setSearchString(urlSearch);
       setFilteredApplicants(searchApplicants(urlSearch));
     }
-  }, []);
+  }, [location.search]);
 
   const handleSearch = (event) => {
     const searchString = event.target.value;
@@ -80,6 +80,12 @@ const Content = (props) => {
       />
     </main>
   );
+};
+
+Content.defaultProps = {
+  isMobile: false,
+  isTablet: false,
+  language: "en",
 };
 
 export default Content;

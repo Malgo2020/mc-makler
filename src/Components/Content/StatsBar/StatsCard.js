@@ -9,4 +9,9 @@ const StatsCard = (props) => (
   </div>
 );
 
+StatsCard.defaultProps = {
+  number: null,
+  name: "",
+};
+
 export default StatsCard;
