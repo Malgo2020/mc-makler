@@ -50,12 +50,12 @@ const Content = (props) => {
       //reset list
       setIsFiltering(false);
       setSearchString("");
-      history.push("/");
+      history.push("/mc-makler/");
     } else {
       setIsFiltering(true);
       setSearchString(searchString);
       setFilteredApplicants(searchApplicants(searchString));
-      history.push(`/?search=${searchString}`);
+      history.push(`/mc-makler/?search=${searchString}`);
     }
   };
 
